@@ -14,7 +14,7 @@
       "name": "carnation",
       "label": "Carnations",
       "price": "$1.99",
-      "description": "Carnations require well-drained, neutral to slightly alkaline soil, and full sun. Examples include Gina Porto, Helen and Red Rocket",
+      "description": "Carnations require well-drained, neutral to slightly alkaline soil, and full sun. Examples include Gina Porto, Helen and Red Rocket.",
       "picture": {
           "small": "carnation_small.jpeg",
           "large": "carnation_large.jpeg"
@@ -24,7 +24,7 @@
       "name": "daffodil",
       "label": "Daffodils",
       "price": "$1.99",
-      "description": "Daffodil is a common English name, sometimes used for all varieties, and commonly used by the American Daffodil Society",
+      "description": "Daffodil is a common English name, sometimes used for all varieties, and commonly used by the American Daffodil Society.",
       "picture": {
         "small": "daffodil_small.jpeg",
         "large": "daffodil_large.jpeg"

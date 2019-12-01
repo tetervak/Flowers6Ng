@@ -17,3 +17,7 @@ img.flower_image{
   box-shadow: 4px 4px 10px #03a9f4;
   border: solid 2px #03a9f4;
 }
+
+.text_box{
+  width: 300px;
+}
