@@ -46,9 +46,9 @@ export class FlowerDataService {
 
   private processFlowerCatalog(flowerCatalog: FlowerCatalog) {
     const items = flowerCatalog.flowers;
-    items.forEach((item: FlowerCatalogItem, index: number) => {
-      this.flowers.push(FlowerDataService.item2Flower(index, item));
-    });
+    items.forEach(
+      (item: FlowerCatalogItem, index: number) =>
+        this.flowers.push(FlowerDataService.item2Flower(index, item)));
     this.preloadLargeImages();
     this.flowerData.next(this.flowers);
   }
