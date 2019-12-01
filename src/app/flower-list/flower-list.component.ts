@@ -6,17 +6,16 @@ import {Flower} from '../flower';
   templateUrl: './flower-list.component.html',
   styleUrls: ['./flower-list.component.css']
 })
-export class FlowerListComponent implements OnInit {
-  public flower: Flower; // the selected flower
+export class FlowerListComponent {
+  public selectedIndex = 0;
   @Input() public flowers: Flower[];
   @Output() public flowerSelected = new EventEmitter();
 
-  public selectFlower(i: number): void {
-    this.flower = this.flowers[i];
-    this.flowerSelected.emit(this.flower);
+  public selectFlower(index: number): void {
+    this.selectedIndex = index;
+    this.flowerSelected.emit(this.flowers[index]);
   }
-
-  ngOnInit(): void {
-    this.flower = this.flowers[0];
+  public isSelected(index: number) {
+    return this.selectedIndex === index;
   }
 }

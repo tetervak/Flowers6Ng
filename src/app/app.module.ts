@@ -6,6 +6,7 @@ import {FlowerListComponent} from './flower-list/flower-list.component';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {FlowerDataService} from './flower-data.service';
 import {FooterModule} from './footer/footer.module';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import {FooterModule} from './footer/footer.module';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     FlexLayoutModule,
     FooterModule
   ],

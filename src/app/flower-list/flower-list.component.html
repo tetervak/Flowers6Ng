@@ -1,5 +1,6 @@
 <p *ngFor="let f of flowers; let i=index;">
-  <img [ngClass]="(flowers[i].label === flower.label)?'thumb selected':'thumb'"
+  <img [ngClass]="isSelected(i)?'thumb selected':'thumb'"
        [src]="f.smallImgSrc" [alt]="f.label"
        (click)="selectFlower(i)">
 </p>
+
